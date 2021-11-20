@@ -1,0 +1,798 @@
+// out: ../css/index.css
+
+@primaryColor: #12254F;
+@secondColor: #F3F6FA;
+@btnColor: #C2D2E4;
+@textColor: #6C6C6D;
+
+.titleText(@titleColor: #12254F;){
+    font-size: 30px;
+    font-weight: 700;
+    color: @titleColor;
+};
+
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+h1, h2, h3, h4, h5, h6, div, ul, li, p, a, span {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-weight: normal;
+    color: #000;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 100%;
+    .row {
+        display: flex;
+        justify-content: center;
+        .col {
+            margin: 100px auto;
+            z-index: 1;
+        }
+    }
+}
+.layer {
+    background-color: rgba(18,37,79, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 50px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: @btnColor;
+    color: @primaryColor;
+}
+.title {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    .titleText();
+}
+.text {
+    max-width: 850px;
+    text-align: center;
+    margin: 20px auto;
+    color: @textColor;
+}
+.card {
+    text-align: center;
+    .card__title {
+        font-weight: 600;
+        margin: 10px 0;
+        color: @primaryColor;
+    }
+    .card__text {
+        line-height: 1.5;
+        color: @textColor;
+        margin: 0;
+    }
+}
+.header {
+    height: 600px;
+    text-transform: uppercase;
+    background-image: url(../img/4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    .row {
+        .col {
+            margin: 0;
+            .header__text {
+                max-width: 500px;
+                margin-top: 200px;
+                > p {
+                    color: #fff;
+                    font-size: 25px;
+                }
+                .header-text {
+                    font-weight: 900;
+                    font-size: 40px;
+                }           
+            }
+        } 
+    }
+}
+.main {
+    .advantages {
+        width: 100%;
+        background-color: @secondColor;
+        .row {
+            .col {
+                .advantages__content {
+                    display: flex;
+                    .card {
+                        max-width: 25%;
+                        text-align: center;
+                        margin: 0 30px;
+                        box-sizing: border-box;
+                    }
+                }
+            }
+        }
+    }
+    .work {
+        width: 100%;
+        background-color: #fff;
+        .row {
+            .col {
+                .work__content {
+                    text-align: center;
+                    .title {
+                        max-width: 800px;
+                        margin: 0 auto;
+                        .titleText();
+                    }
+                    .text {
+                        max-width: 850px;
+                        margin: 20px auto;
+                        color: @textColor;
+                    }  
+                    .work__cards {
+                        display: flex;
+                        justify-content: space-between;
+                        .card {
+                            max-width: 320px;
+                            > img {
+                                width: 100%;
+                            }
+                            .card__container {
+                                display: flex;
+                                align-items: center;
+                                margin: 0;
+                                > img {
+                                    height: 64px;
+                                    margin-right: 10px;
+                                }
+                                .container__text{
+                                    text-align: left;
+                                    margin: 0;
+                                    .card__text {
+                                        margin: 0;
+                                    }
+                                }
+                            }               
+                        } 
+                        :nth-child(2) {
+                            margin: 0 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .statistic {
+        background-image: url(../img/4.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        .row {
+            .col {
+                .statistic__content {
+                    text-align: center;
+                    .statistic__text {
+                        .title {
+                            .titleText(@titleColor: #fff);
+                        }
+                        .secondTitle {
+                            color: @btnColor;
+                            font-size: 40px;
+                            font-weight: 900;
+                            margin: 10px 0;
+                        }
+                        .text {
+                            color: #fff; 
+                        }
+                    }
+                    > hr {
+                        margin: 40px 0;
+                    }
+                    .statistic__cards {
+                        display: flex;
+                        justify-content: space-around;
+                        .card {
+                            > p {
+                                color: #fff;
+                            }
+                            .number {
+                                font-size: 40px;
+                                margin: 10px 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .experience {
+        background-color: #fff;
+        .row {
+            .col {
+                .experience__content {
+                    text-align: center;
+                    .experience__title {
+                        .titleText();
+                    }
+                    .experience__text {
+                        margin: 20px auto;
+                        max-width: 800px;
+                    }
+                    .experience__img {
+                        display: flex;
+                        justify-content: space-between;
+                        .container__img {
+                            width: 300px;
+                            height: 300px;
+                            margin: 10px 0;
+                            > img {
+                                display: block;
+                                width: 100%; 
+                                height: 100%;
+                                object-fit: cover;                           
+                            }
+                        }
+                        :nth-child(2) {
+                            margin: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .pricing {
+        background-color: @secondColor;
+        .row {
+            .col {
+                .pricing__content{
+                    display: flex;
+                    justify-content: space-between;
+                    position: relative;
+                    .pricing__text{
+                        .title {
+                            .titleText();
+                            text-align: left;
+                        }
+                        .pricing__subtitle {
+                            color: #003289;
+                            font-weight: 600;
+                            margin: 10px 0;
+                        }
+                        .text {
+                            max-width: 550px;
+                            text-align: left;
+                            line-height: 1.5;
+                            color: @textColor;
+                        }
+                        .btn {
+                            background-color: @primaryColor;
+                            color: #fff;
+                        }
+                    }
+                    .pricing_img {
+                        width: 500px;
+                        height: 300px;
+                        > img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            z-index: 1;
+                        }
+                        .img__border {
+                            position: absolute;
+                            width: 150px;
+                            height: 350px;
+                            top: -25px;
+                            right: 50px;
+                            border: 5px solid @btnColor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .more {
+        background-image: url(../img/4.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        .row {
+            .col {
+                .more__content {
+                    text-align: center;
+                    .title {
+                        .titleText(@titleColor: #fff);
+                    }
+                    .text {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    .team {
+        width: 100%;
+        background-color: #fff;
+        .row {
+            .col {
+                .team__content {
+                    .team__card {
+                        display: flex;
+                        justify-content: space-between;
+                        .card {
+                            width: 310px;
+                            position: relative;
+                            text-transform: uppercase;
+                            margin: 20px 0;
+                            > img {
+                                width: 100%;
+                                height: 310px;
+                                object-fit: cover;
+                            }
+                            .team__social { 
+                                position: absolute;
+                                bottom: 100px; 
+                                left: 100px;        
+                                > a {
+                                    display: inline-block;
+                                    > img {
+                                        width: auto;
+                                        margin: 0 10px;
+                                    }
+                                }
+                            }
+                            .card__title {
+                                font-size: 16px;
+                                margin: 20px 0 0 0;
+                            }
+                            .card__text {
+                                font-size: 14px;
+                                margin-top: 10px;
+                            }
+                        }
+                        :nth-child(2) {
+                            margin: 20px 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.footer {
+    background-image: url(../img/4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    .row {
+        .col {
+            .footer__content {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                text-transform: uppercase;
+                .title {
+                    color: #fff;
+                    margin: 0;
+                }
+                .btn {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .title {
+        font-size: 25px;
+    }
+    .text {
+        font-size: 14px;
+    }
+    .card__title {
+        font-size: 16px !important;
+    }
+    .card__text {
+        font-size: 14px !important;
+    }
+    .work {
+        .row {
+            .col {
+                .work__content {
+                    .work__cards {
+                        .card {
+                            max-width: 270px;
+                            .container__text {
+                                margin: 0;
+                                .card__text {
+                                    margin: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .pricing {
+        .row {
+            .col {
+                .pricing__content {
+                    .pricing__text {
+                        max-width: 400px;
+                    }
+                    .pricing_img {
+                        .img__border {
+                            width: 100px;
+                            height: 300px;
+                            top: -25px;
+                            right: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .team {
+        .row {
+            .col {
+                .team__content {
+                    .team__card {
+                        .card {
+                            .team__social {
+                                bottom: 90px !important;
+                                left: 65px !important;
+                                > a {
+                                    > img {
+                                        width: auto;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .title {
+        font-size: 20px !important;
+        max-width: 500px;
+    }
+    .text {
+        font-size: 12px !important;
+        max-width: 550px;
+    }
+    .card__title {
+        font-size: 14px !important;
+    }
+    .card__text {
+        font-size: 12px !important;
+        line-height: 1 !important;
+    }
+    .btn {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 8px 26px;
+        border-radius: 30px;
+        font-size: 10px;
+        font-weight: 600;
+        text-transform: uppercase;
+        background-color: @btnColor;
+        color: @primaryColor;
+    }
+    .header {
+        height: 400px;
+        .row {
+            .col {
+                .header__text {
+                    margin-top: 150px;
+                    margin-left: 50px;
+                    max-width: 300px;
+                    > p {
+                        color: #fff;
+                        font-size: 16px;
+                    }
+                    .header-text {
+                        font-weight: 900;
+                        font-size: 26px;
+                    }           
+                }
+            }
+        }  
+    }
+    .advantages {
+        .row {
+            .col {
+                .advantages__content {
+                    .card {
+                        margin: 0 20px;
+                  }
+                }
+            }
+        }
+    }
+    .work {
+        .row {
+            .col {
+                .work__content {
+                    .work__cards {
+                        flex-wrap: wrap;
+                        justify-content: center !important;
+                        margin: 0 10px;
+                        .card {
+                            margin-bottom: 10px;
+                            .card__container {
+                                .card__text {
+                                    margin: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .statistic {
+        .row {
+            .col {
+                .statistic__content {
+                    .statistic__text {
+                        .secondTitle {
+                            font-size: 26px;
+                        }
+                    }
+                    .statistic__cards {
+                        .card {
+                            .number {
+                                font-size: 26px
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .experience {
+        .row {
+            .col {
+                .experience__content {
+                    .experience__img {
+                        flex-wrap: wrap;
+                        justify-content: center !important;
+                        :nth-child(2) {
+                            margin: 10px 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .pricing {
+       .row {
+           .col {
+                .pricing__content{
+                    margin: 0 10px;
+                    .pricing__text{
+                        .text {
+                            max-width: 550px;
+                            line-height: 1;
+                        }
+                    }
+                }
+           }
+       }
+    }
+    .team {
+        .row {
+            .col {
+                .team__content {
+                    .team__card {
+                        justify-content: space-around;
+                        margin: 0 10px;
+                        .card {
+                            .team__social {
+                                bottom: 80px;
+                                left: 40px;
+                                > a {
+                                    > img {
+                                        width: auto;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer {
+        .row {
+            .col {
+                .footer__content {
+                    margin: 0 10px; 
+                 }
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .col {
+        margin: 50px 0;
+    }
+    .title {
+        font-size: 18px !important;
+        max-width: 500px;
+    }
+    .text {
+        font-size: 12px !important;
+        max-width: 550px;
+    }
+    .card__title {
+        font-size: 14px !important;
+    }
+    .card__text {
+        font-size: 12px !important;
+        line-height: 1 !important;
+    }
+    .header {
+        height: 300px;
+        .row {
+            .col {
+                .header__text {
+                    margin-top: 100px;
+                    margin-left: 30px;
+                    max-width: 250px;
+                    > p {
+                        color: #fff;
+                        font-size: 16px;
+                    }
+                    .header-text {
+                        font-weight: 900;
+                        font-size: 20px;
+                    }           
+                }
+            }
+        }  
+    }
+    .advantages {
+        .row {
+            .col {
+                .advantages__content {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    .card {
+                        max-width: 40%;
+                        box-sizing: border-box;
+                    }
+                }
+            }
+        }
+    }
+    .work {
+        .row {
+            .col {
+                .work__content {
+                    .work__cards {
+                        .card {
+                            max-width: 400px;
+                            margin: 10px auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .statistic {
+        .row {
+            .col {
+                .statistic__content {
+                    .statistic__cards {
+                        display: flex;
+                        justify-content: space-around;
+                        flex-wrap: wrap;
+                        .card {
+                            width: 50%;
+                        }
+                        :nth-child(1) {
+                            margin-bottom: 20px;
+                        }
+                        :nth-child(2) {
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .pricing {
+        background-color: @secondColor;
+        .row {
+            .col {
+                .pricing__content{
+                    flex-wrap: wrap;
+                    margin: 0 10px;
+                    .pricing__text {
+                        max-width: 600px;
+                        .title {
+                            margin: 0;
+                        }
+                        .text {
+                            text-align: justify !important;
+                        }
+                        .btn {
+                            margin: 0;
+                        }
+                    }
+                    .pricing_img {
+                        position: relative;
+                        margin: 20px auto;
+                        .img__border  {
+                            width: 80px !important;
+                            right: 40px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .team {
+        .row {
+            .col {
+                .team__content {
+                    .team__card {
+                        justify-content: center !important;
+                        flex-wrap: wrap;
+                        .card {
+                            .team__social {
+                                bottom: 85px !important;
+                                left: 85px !important;
+                                > a {
+                                    > img {
+                                        width: auto;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer {
+        .row {
+            .col {
+                .footer__content {
+                    flex-wrap: wrap;
+                    .title {
+                        margin-bottom: 20px;
+                    }
+                    .btn {
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+    }
+}

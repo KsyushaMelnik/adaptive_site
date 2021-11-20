@@ -1,0 +1,607 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+ul,
+li,
+p,
+a,
+span {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: normal;
+  color: #000;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+.wrapper {
+  width: 100%;
+}
+.wrapper .row {
+  display: flex;
+  justify-content: center;
+}
+.wrapper .row .col {
+  margin: 100px auto;
+  z-index: 1;
+}
+.layer {
+  background-color: rgba(18, 37, 79, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 50px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: #C2D2E4;
+  color: #12254F;
+}
+.title {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  color: #12254F;
+}
+.text {
+  max-width: 850px;
+  text-align: center;
+  margin: 20px auto;
+  color: #6C6C6D;
+}
+.card {
+  text-align: center;
+}
+.card .card__title {
+  font-weight: 600;
+  margin: 10px 0;
+  color: #12254F;
+}
+.card .card__text {
+  line-height: 1.5;
+  color: #6C6C6D;
+  margin: 0;
+}
+.header {
+  height: 600px;
+  text-transform: uppercase;
+  background-image: url(../img/4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.header .row .col {
+  margin: 0;
+}
+.header .row .col .header__text {
+  max-width: 500px;
+  margin-top: 200px;
+}
+.header .row .col .header__text > p {
+  color: #fff;
+  font-size: 25px;
+}
+.header .row .col .header__text .header-text {
+  font-weight: 900;
+  font-size: 40px;
+}
+.main .advantages {
+  width: 100%;
+  background-color: #F3F6FA;
+}
+.main .advantages .row .col .advantages__content {
+  display: flex;
+}
+.main .advantages .row .col .advantages__content .card {
+  max-width: 25%;
+  text-align: center;
+  margin: 0 30px;
+  box-sizing: border-box;
+}
+.main .work {
+  width: 100%;
+  background-color: #fff;
+}
+.main .work .row .col .work__content {
+  text-align: center;
+}
+.main .work .row .col .work__content .title {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 30px;
+  font-weight: 700;
+  color: #12254F;
+}
+.main .work .row .col .work__content .text {
+  max-width: 850px;
+  margin: 20px auto;
+  color: #6C6C6D;
+}
+.main .work .row .col .work__content .work__cards {
+  display: flex;
+  justify-content: space-between;
+}
+.main .work .row .col .work__content .work__cards .card {
+  max-width: 320px;
+}
+.main .work .row .col .work__content .work__cards .card > img {
+  width: 100%;
+}
+.main .work .row .col .work__content .work__cards .card .card__container {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+.main .work .row .col .work__content .work__cards .card .card__container > img {
+  height: 64px;
+  margin-right: 10px;
+}
+.main .work .row .col .work__content .work__cards .card .card__container .container__text {
+  text-align: left;
+  margin: 0;
+}
+.main .work .row .col .work__content .work__cards .card .card__container .container__text .card__text {
+  margin: 0;
+}
+.main .work .row .col .work__content .work__cards :nth-child(2) {
+  margin: 0 20px;
+}
+.main .statistic {
+  background-image: url(../img/4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.main .statistic .row .col .statistic__content {
+  text-align: center;
+}
+.main .statistic .row .col .statistic__content .statistic__text .title {
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+}
+.main .statistic .row .col .statistic__content .statistic__text .secondTitle {
+  color: #C2D2E4;
+  font-size: 40px;
+  font-weight: 900;
+  margin: 10px 0;
+}
+.main .statistic .row .col .statistic__content .statistic__text .text {
+  color: #fff;
+}
+.main .statistic .row .col .statistic__content > hr {
+  margin: 40px 0;
+}
+.main .statistic .row .col .statistic__content .statistic__cards {
+  display: flex;
+  justify-content: space-around;
+}
+.main .statistic .row .col .statistic__content .statistic__cards .card > p {
+  color: #fff;
+}
+.main .statistic .row .col .statistic__content .statistic__cards .card .number {
+  font-size: 40px;
+  margin: 10px 0;
+}
+.main .experience {
+  background-color: #fff;
+}
+.main .experience .row .col .experience__content {
+  text-align: center;
+}
+.main .experience .row .col .experience__content .experience__title {
+  font-size: 30px;
+  font-weight: 700;
+  color: #12254F;
+}
+.main .experience .row .col .experience__content .experience__text {
+  margin: 20px auto;
+  max-width: 800px;
+}
+.main .experience .row .col .experience__content .experience__img {
+  display: flex;
+  justify-content: space-between;
+}
+.main .experience .row .col .experience__content .experience__img .container__img {
+  width: 300px;
+  height: 300px;
+  margin: 10px 0;
+}
+.main .experience .row .col .experience__content .experience__img .container__img > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.main .experience .row .col .experience__content .experience__img :nth-child(2) {
+  margin: 10px;
+}
+.main .pricing {
+  background-color: #F3F6FA;
+}
+.main .pricing .row .col .pricing__content {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.main .pricing .row .col .pricing__content .pricing__text .title {
+  font-size: 30px;
+  font-weight: 700;
+  color: #12254F;
+  text-align: left;
+}
+.main .pricing .row .col .pricing__content .pricing__text .pricing__subtitle {
+  color: #003289;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.main .pricing .row .col .pricing__content .pricing__text .text {
+  max-width: 550px;
+  text-align: left;
+  line-height: 1.5;
+  color: #6C6C6D;
+}
+.main .pricing .row .col .pricing__content .pricing__text .btn {
+  background-color: #12254F;
+  color: #fff;
+}
+.main .pricing .row .col .pricing__content .pricing_img {
+  width: 500px;
+  height: 300px;
+}
+.main .pricing .row .col .pricing__content .pricing_img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+.main .pricing .row .col .pricing__content .pricing_img .img__border {
+  position: absolute;
+  width: 150px;
+  height: 350px;
+  top: -25px;
+  right: 50px;
+  border: 5px solid #C2D2E4;
+}
+.main .more {
+  background-image: url(../img/4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.main .more .row .col .more__content {
+  text-align: center;
+}
+.main .more .row .col .more__content .title {
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+}
+.main .more .row .col .more__content .text {
+  color: #fff;
+}
+.main .team {
+  width: 100%;
+  background-color: #fff;
+}
+.main .team .row .col .team__content .team__card {
+  display: flex;
+  justify-content: space-between;
+}
+.main .team .row .col .team__content .team__card .card {
+  width: 310px;
+  position: relative;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+.main .team .row .col .team__content .team__card .card > img {
+  width: 100%;
+  height: 310px;
+  object-fit: cover;
+}
+.main .team .row .col .team__content .team__card .card .team__social {
+  position: absolute;
+  bottom: 100px;
+  left: 100px;
+}
+.main .team .row .col .team__content .team__card .card .team__social > a {
+  display: inline-block;
+}
+.main .team .row .col .team__content .team__card .card .team__social > a > img {
+  width: auto;
+  margin: 0 10px;
+}
+.main .team .row .col .team__content .team__card .card .card__title {
+  font-size: 16px;
+  margin: 20px 0 0 0;
+}
+.main .team .row .col .team__content .team__card .card .card__text {
+  font-size: 14px;
+  margin-top: 10px;
+}
+.main .team .row .col .team__content .team__card :nth-child(2) {
+  margin: 20px 10px;
+}
+.footer {
+  background-image: url(../img/4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.footer .row .col .footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+}
+.footer .row .col .footer__content .title {
+  color: #fff;
+  margin: 0;
+}
+.footer .row .col .footer__content .btn {
+  margin: 0;
+}
+@media (max-width: 1200px) {
+  .title {
+    font-size: 25px;
+  }
+  .text {
+    font-size: 14px;
+  }
+  .card__title {
+    font-size: 16px !important;
+  }
+  .card__text {
+    font-size: 14px !important;
+  }
+  .work .row .col .work__content .work__cards .card {
+    max-width: 270px;
+  }
+  .work .row .col .work__content .work__cards .card .container__text {
+    margin: 0;
+  }
+  .work .row .col .work__content .work__cards .card .container__text .card__text {
+    margin: 0;
+  }
+  .pricing .row .col .pricing__content .pricing__text {
+    max-width: 400px;
+  }
+  .pricing .row .col .pricing__content .pricing_img .img__border {
+    width: 100px;
+    height: 300px;
+    top: -25px;
+    right: 30px;
+  }
+  .team .row .col .team__content .team__card .card .team__social {
+    bottom: 90px !important;
+    left: 65px !important;
+  }
+  .team .row .col .team__content .team__card .card .team__social > a > img {
+    width: auto;
+  }
+}
+@media (max-width: 900px) {
+  .title {
+    font-size: 20px !important;
+    max-width: 500px;
+  }
+  .text {
+    font-size: 12px !important;
+    max-width: 550px;
+  }
+  .card__title {
+    font-size: 14px !important;
+  }
+  .card__text {
+    font-size: 12px !important;
+    line-height: 1 !important;
+  }
+  .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 26px;
+    border-radius: 30px;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: #C2D2E4;
+    color: #12254F;
+  }
+  .header {
+    height: 400px;
+  }
+  .header .row .col .header__text {
+    margin-top: 150px;
+    margin-left: 50px;
+    max-width: 300px;
+  }
+  .header .row .col .header__text > p {
+    color: #fff;
+    font-size: 16px;
+  }
+  .header .row .col .header__text .header-text {
+    font-weight: 900;
+    font-size: 26px;
+  }
+  .advantages .row .col .advantages__content .card {
+    margin: 0 20px;
+  }
+  .work .row .col .work__content .work__cards {
+    flex-wrap: wrap;
+    justify-content: center !important;
+    margin: 0 10px;
+  }
+  .work .row .col .work__content .work__cards .card {
+    margin-bottom: 10px;
+  }
+  .work .row .col .work__content .work__cards .card .card__container .card__text {
+    margin: 0;
+  }
+  .statistic .row .col .statistic__content .statistic__text .secondTitle {
+    font-size: 26px;
+  }
+  .statistic .row .col .statistic__content .statistic__cards .card .number {
+    font-size: 26px;
+  }
+  .experience .row .col .experience__content .experience__img {
+    flex-wrap: wrap;
+    justify-content: center !important;
+  }
+  .experience .row .col .experience__content .experience__img :nth-child(2) {
+    margin: 10px 20px;
+  }
+  .pricing .row .col .pricing__content {
+    margin: 0 10px;
+  }
+  .pricing .row .col .pricing__content .pricing__text .text {
+    max-width: 550px;
+    line-height: 1;
+  }
+  .team .row .col .team__content .team__card {
+    justify-content: space-around;
+    margin: 0 10px;
+  }
+  .team .row .col .team__content .team__card .card .team__social {
+    bottom: 80px;
+    left: 40px;
+  }
+  .team .row .col .team__content .team__card .card .team__social > a > img {
+    width: auto;
+  }
+  .footer .row .col .footer__content {
+    margin: 0 10px;
+  }
+}
+@media (max-width: 600px) {
+  .col {
+    margin: 50px 0;
+  }
+  .title {
+    font-size: 18px !important;
+    max-width: 500px;
+  }
+  .text {
+    font-size: 12px !important;
+    max-width: 550px;
+  }
+  .card__title {
+    font-size: 14px !important;
+  }
+  .card__text {
+    font-size: 12px !important;
+    line-height: 1 !important;
+  }
+  .header {
+    height: 300px;
+  }
+  .header .row .col .header__text {
+    margin-top: 100px;
+    margin-left: 30px;
+    max-width: 250px;
+  }
+  .header .row .col .header__text > p {
+    color: #fff;
+    font-size: 16px;
+  }
+  .header .row .col .header__text .header-text {
+    font-weight: 900;
+    font-size: 20px;
+  }
+  .advantages .row .col .advantages__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .advantages .row .col .advantages__content .card {
+    max-width: 40%;
+    box-sizing: border-box;
+  }
+  .work .row .col .work__content .work__cards .card {
+    max-width: 400px;
+    margin: 10px auto;
+  }
+  .statistic .row .col .statistic__content .statistic__cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .statistic .row .col .statistic__content .statistic__cards .card {
+    width: 50%;
+  }
+  .statistic .row .col .statistic__content .statistic__cards :nth-child(1) {
+    margin-bottom: 20px;
+  }
+  .statistic .row .col .statistic__content .statistic__cards :nth-child(2) {
+    margin-bottom: 20px;
+  }
+  .pricing {
+    background-color: #F3F6FA;
+  }
+  .pricing .row .col .pricing__content {
+    flex-wrap: wrap;
+    margin: 0 10px;
+  }
+  .pricing .row .col .pricing__content .pricing__text {
+    max-width: 600px;
+  }
+  .pricing .row .col .pricing__content .pricing__text .title {
+    margin: 0;
+  }
+  .pricing .row .col .pricing__content .pricing__text .text {
+    text-align: justify !important;
+  }
+  .pricing .row .col .pricing__content .pricing__text .btn {
+    margin: 0;
+  }
+  .pricing .row .col .pricing__content .pricing_img {
+    position: relative;
+    margin: 20px auto;
+  }
+  .pricing .row .col .pricing__content .pricing_img .img__border {
+    width: 80px !important;
+    right: 40px !important;
+  }
+  .team .row .col .team__content .team__card {
+    justify-content: center !important;
+    flex-wrap: wrap;
+  }
+  .team .row .col .team__content .team__card .card .team__social {
+    bottom: 85px !important;
+    left: 85px !important;
+  }
+  .team .row .col .team__content .team__card .card .team__social > a > img {
+    width: auto;
+  }
+  .footer .row .col .footer__content {
+    flex-wrap: wrap;
+  }
+  .footer .row .col .footer__content .title {
+    margin-bottom: 20px;
+  }
+  .footer .row .col .footer__content .btn {
+    margin: 0 auto;
+  }
+}
